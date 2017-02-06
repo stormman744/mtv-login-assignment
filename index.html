@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div id="main" style="position:relative;">
+<div class="login-page" style="display: none;">
+<div class="form">
+    <form class="register-form">
+        <input id="create-name" type="text" placeholder="name" />
+        <input id="create-pw" type="password" placeholder="password" />
+        <input id="create-email" type="text" placeholder="email address" />
+        <button id="create">create</button>
+        <p id="toggle-signin" class="message">Already registered? <a>Sign In</a></p>
+    </form>
+    <form class="login-form">
+        <input type="text" placeholder="username" id="name" />
+        <input type="password" placeholder="password" id="pw" />
+        <button id="logon">login</button>
+        <p id="toggle-create" class="message">Not registered? <a>Create an account</a></p>
+        <p class="message">forgot password? <a id="forgot">Forgot my password</a></p>
+    </form>
+</div>
+</div>
+<div class="loggedin-page" style="display: none;">
+<h1>Welcome to the page</h1>
+<h3>List of users</h3>
+<ul id="userlist"></ul>
+<a id="logout"><i style="cursor: pointer;" class="fa fa-sign-out" aria-hidden="false">Logout</i>
+</a>
+</body>
+
+</html>
